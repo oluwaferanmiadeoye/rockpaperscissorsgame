@@ -11,44 +11,52 @@
     ></script>
   </head>
   <body>
-    <div class="game-container">
-      <h1>Rock Paper Scissors</h1>
+    <div class="container">
+      <div class="game-container">
+        <h1>Rock Paper Scissors</h1>
 
-      <div class="score-board">
-        <div class="score-item">
-          <div class="score-label">You</div>
-          <div class="score-value" id="player-score">0</div>
+        <div class="score-board">
+          <div class="score-item">
+            <div class="score-label">You</div>
+            <div class="score-value" id="player-score">0</div>
+          </div>
+          <div class="score-item">
+            <div class="score-label">Computer</div>
+            <div class="score-value" id="computer-score">0</div>
+          </div>
         </div>
-        <div class="score-item">
-          <div class="score-label">Computer</div>
-          <div class="score-value" id="computer-score">0</div>
+
+        <div class="choices">
+          <button class="choice-btn" id="rock">
+            <i class="fas fa-hand-back-fist"></i>
+          </button>
+          <button class="choice-btn" id="paper">
+            <i class="fas fa-hand"></i>
+          </button>
+          <button class="choice-btn" id="scissors">
+            <i class="fas fa-hand-scissors"></i>
+          </button>
         </div>
-      </div>
 
-      <div class="choices">
-        <button class="choice-btn" id="rock">
-          <i class="fas fa-hand-back-fist"></i>
-        </button>
-        <button class="choice-btn" id="paper">
-          <i class="fas fa-hand"></i>
-        </button>
-        <button class="choice-btn" id="scissors">
-          <i class="fas fa-hand-scissors"></i>
-        </button>
-      </div>
-
-      <div class="battle-area" id="battle-area">
-        <div class="battle-display">
-          <div class="choice-display" id="player-display">❓</div>
-          <div class="vs-text">vs</div>
-          <div class="choice-display" id="computer-display">❓</div>
+        <div class="battle-area" id="battle-area">
+          <div class="battle-display">
+            <div class="choice-display" id="player-display">❓</div>
+            <div class="vs-text">vs</div>
+            <div class="choice-display" id="computer-display">❓</div>
+          </div>
+          <div class="result-text" id="result-text"></div>
         </div>
-        <div class="result-text" id="result-text"></div>
-      </div>
 
-      <button class="reset-btn" id="reset-btn">Reset Scores</button>
+        <button class="reset-btn" id="reset-btn">Reset Scores</button>
+      </div>
+      <footer>
+        <p>
+          Created by
+          <a href="xhttps://x.com/builtbyajay" target="_blank">Ajay</a>
+        </p>
+        <p>© 2025 Rock Paper Scissors Game</p>
+      </footer>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
