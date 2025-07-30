@@ -167,6 +167,10 @@ h1 {
   background: #bdc3c7;
 }
 
+i {
+  color: #2c3e50;
+}
+
 .hidden {
   display: none;
 }
@@ -274,9 +278,17 @@ a {
     padding: 0.6rem;
   }
 
+  .choice-display:first-child {
+    order: 1;
+  }
+
   .vs-text {
     font-size: 1rem;
-    order: 1;
+    order: 2;
+  }
+
+  .choice-display:last-child {
+    order: 3;
   }
 
   .result-text {
